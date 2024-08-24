@@ -123,14 +123,14 @@ def load_test_data(root, path, rul):
 
     datasets = []
     labels = []
-    max_rul = rul + (len(filenames)) * 10
+    max_rul = rul + (len(filenames))
 
     for i, filename in enumerate(filenames, 0):
         sub_path = os.path.join(paths, filename)
         data = pd.read_csv(sub_path, header=None)
         datas = normalization_data(data)
         datasets.append(datas)
-        label = max_rul - i * 10
+        label = max_rul - i
         labels.append(label)
 
     labels = normalization_test_label(labels, max_rul)
