@@ -1,8 +1,6 @@
 # phm2012_domain_cnn_bi_lstm
 Relevant code: CNN-Bi-LSTM model, domain adaptation model, relevant experimental data, and charts.  
   
-Datas from https://engineering.case.edu/bearingdatacenter/download-data-file \(CWRU Dataset) and https://github.com/Lucky-Loek/ieee-phm-2012-data-challenge-dataset.git \(PHM2012 Dataset)  .The PHM2012 dataset used in the experiment can be downloaded from this GitHub link.
-  
 First, we use rul_pre_data.py code to preprocess the original data, which mainly includes: importing data, normalizing data, marking data with RUL label, and data slicing (expanding data volume). The rul_model.py code is the CNN-Bi-LSTM model that we built. The param_search.py code (which does a random search) determines the hyperparameters to be used for model training. The rul_train.py code indicates how the data is put into the model for training.  
   
 Secondly, the rul_main.py code was used to import relevant data, train the model, and determine the hyperparameters related to the model training to train the model. After the training, the trained model was saved. The trained model is imported through the predict.py code and tested using the data set.Visualize the test results using rul_result_visualize.py code, and MAE and RMSE are recorded.  
