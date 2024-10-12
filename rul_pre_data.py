@@ -172,17 +172,17 @@ def get_test_data():
     path_10 = 'Bearing2_7'
     path_11 = 'Bearing3_3'
 
-    dataset_1, label_1 = load_test_data(root, path_1, 573)
-    dataset_2, label_2 = load_test_data(root, path_2, 34)
-    dataset_3, label_3 = load_test_data(root, path_3, 161)
-    dataset_4, label_4 = load_test_data(root, path_4, 146)
-    dataset_5, label_5 = load_test_data(root, path_5, 757)
-    dataset_6, label_6 = load_test_data(root, path_6, 753)
-    dataset_7, label_7 = load_test_data(root, path_7, 139)
-    dataset_8, label_8 = load_test_data(root, path_8, 309)
-    dataset_9, label_9 = load_test_data(root, path_9, 129)
-    dataset_10, label_10 = load_test_data(root, path_10, 58)
-    dataset_11, label_11 = load_test_data(root, path_11, 82)
+    dataset_1, label_1 = load_test_data(root, path_1, 0)
+    dataset_2, label_2 = load_test_data(root, path_2, 0)
+    dataset_3, label_3 = load_test_data(root, path_3, 0)
+    dataset_4, label_4 = load_test_data(root, path_4, 0)
+    dataset_5, label_5 = load_test_data(root, path_5, 0)
+    dataset_6, label_6 = load_test_data(root, path_6, 0)
+    dataset_7, label_7 = load_test_data(root, path_7, 0)
+    dataset_8, label_8 = load_test_data(root, path_8, 0)
+    dataset_9, label_9 = load_test_data(root, path_9, 0)
+    dataset_10, label_10 = load_test_data(root, path_10, 0)
+    dataset_11, label_11 = load_test_data(root, path_11, 0)
 
     return dataset_1, label_1, dataset_2, label_2, dataset_3, label_3, dataset_4, label_4, dataset_5, label_5, \
            dataset_6, label_6, dataset_7, label_7, dataset_8, label_8, dataset_9, label_9, dataset_10, label_10, \
